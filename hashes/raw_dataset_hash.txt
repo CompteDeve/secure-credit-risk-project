@@ -1,0 +1,5 @@
+HASH SHA-256 - DATASET BRUT
+==================================================
+Fichier : data_credit_risk (3).csv
+Date : 2026-07-11 15:35:58
+Hash : 6632f41cd72dca5e15896b66ebe53ba603f58f8e9cb85accef7ef20b6df47785
