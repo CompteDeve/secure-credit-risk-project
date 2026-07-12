@@ -1,0 +1,634 @@
+2026-07-12 10:11:52 | INFO     | Modele charge depuis models/model.pkl
+2026-07-12 10:13:12 | WARNING  | Acces refuse : cle API invalide ou absente (None)
+2026-07-12 10:13:35 | WARNING  | Acces refuse : cle API invalide ou absente (None)
+2026-07-12 10:13:36 | WARNING  | Acces refuse : cle API invalide ou absente (None)
+2026-07-12 10:13:36 | WARNING  | Acces refuse : cle API invalide ou absente (None)
+2026-07-12 10:13:49 | WARNING  | Acces refuse : cle API invalide ou absente (None)
+2026-07-12 10:14:21 | INFO     | Arret de l'API.
+2026-07-12 10:17:51 | INFO     | Modele charge depuis models/model.pkl
+2026-07-12 10:22:12 | INFO     | Arret de l'API.
+2026-07-12 10:22:18 | INFO     | Modele charge depuis models/model.pkl
+2026-07-12 10:24:31 | INFO     | Modele charge depuis models/model.pkl
+2026-07-12 10:24:31 | WARNING  | Acces refuse : cle API invalide ou absente (None)
+2026-07-12 10:24:31 | WARNING  | Acces refuse : cle API invalide ou absente ('cle-totalement-invalide')
+2026-07-12 10:24:32 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=112.29ms
+2026-07-12 10:24:32 | WARNING  | Requete invalide sur /predict : [{'type': 'greater_than_equal', 'loc': ('body', 'existing_credits'), 'msg': 'Input should be greater than or equal to 0', 'input': -5, 'ctx': {'ge': 0}}]
+2026-07-12 10:24:32 | WARNING  | Requete invalide sur /predict : [{'type': 'float_parsing', 'loc': ('body', 'annual_income_normalized'), 'msg': 'Input should be a valid number, unable to parse string as a number', 'input': 'abc'}]
+2026-07-12 10:24:32 | WARNING  | Requete invalide sur /predict : [{'type': 'less_than_equal', 'loc': ('body', 'debt_ratio'), 'msg': 'Input should be less than or equal to 1', 'input': 999, 'ctx': {'le': 1.0}}]
+2026-07-12 10:24:32 | WARNING  | Requete invalide sur /predict : [{'type': 'missing', 'loc': ('body', 'debt_ratio'), 'msg': 'Field required', 'input': {'gender_encoded': 1, 'marital_status_encoded': 2, 'housing_status_encoded': 2, 'annual_income_normalized': 0.17, 'savings_balance_normalized': 1.04, 'checking_balance_normalized': 0.13, 'loan_amount_normalized': 0.63, 'loan_duration_months': 24, 'existing_credits': 1, 'past_due_count': 0, 'credit_history_score': 0.5, 'loan_purpose_car': True, 'loan_purpose_education': False, 'loan_purpose_health': False, 'loan_purpose_housing': False, 'loan_purpose_other': False, 'region_Assaba': False, 'region_Brakna': False, 'region_Gorgol': False, 'region_Guidimakha': False, 'region_Hodh_Ech_Chargui': False, 'region_Hodh_El_Gharbi': False, 'region_Inchiri': False, 'region_Nouadhibou': False, 'region_Nouakchott': True, 'region_Tagant': False, 'region_Trarza': False, 'education_level_master': False, 'education_level_phd': False, 'education_level_primary': False, 'education_level_secondary': True, 'employment_status_public_sector': True, 'employment_status_retired': False, 'employment_status_self_employed': False, 'employment_status_student': False, 'employment_status_unemployed': False}}]
+2026-07-12 10:24:32 | WARNING  | Requete invalide sur /predict : [{'type': 'extra_forbidden', 'loc': ('body', 'is_admin'), 'msg': 'Extra inputs are not permitted', 'input': True}]
+2026-07-12 10:24:32 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=74.21ms
+2026-07-12 10:24:32 | WARNING  | Requete invalide sur /predict : [{'type': 'greater_than_equal', 'loc': ('body', 'existing_credits'), 'msg': 'Input should be greater than or equal to 0', 'input': -5, 'ctx': {'ge': 0}}]
+2026-07-12 10:24:32 | WARNING  | Acces refuse : cle API invalide ou absente ('cle-totalement-invalide')
+2026-07-12 10:24:32 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=79.58ms
+2026-07-12 10:24:32 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=60.65ms
+2026-07-12 10:24:32 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=58.35ms
+2026-07-12 10:24:32 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=57.09ms
+2026-07-12 10:24:32 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=60.31ms
+2026-07-12 10:24:32 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=62.88ms
+2026-07-12 10:24:32 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=58.88ms
+2026-07-12 10:24:32 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=58.27ms
+2026-07-12 10:24:32 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=57.5ms
+2026-07-12 10:24:32 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=55.34ms
+2026-07-12 10:24:32 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=48.23ms
+2026-07-12 10:24:32 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=58.27ms
+2026-07-12 10:24:33 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=56.71ms
+2026-07-12 10:24:33 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=51.37ms
+2026-07-12 10:24:33 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=57.4ms
+2026-07-12 10:24:33 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=60.08ms
+2026-07-12 10:24:33 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=59.47ms
+2026-07-12 10:24:33 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=52.59ms
+2026-07-12 10:24:33 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=61.72ms
+2026-07-12 10:24:33 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=59.08ms
+2026-07-12 10:24:33 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=59.14ms
+2026-07-12 10:24:33 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=61.43ms
+2026-07-12 10:24:33 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=56.22ms
+2026-07-12 10:24:33 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=57.96ms
+2026-07-12 10:24:33 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=58.47ms
+2026-07-12 10:24:33 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=57.85ms
+2026-07-12 10:24:33 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=49.7ms
+2026-07-12 10:24:33 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=60.09ms
+2026-07-12 10:24:33 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=61.8ms
+2026-07-12 10:24:34 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=62.74ms
+2026-07-12 10:24:34 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=57.75ms
+2026-07-12 10:24:34 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=61.4ms
+2026-07-12 10:24:34 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=63.52ms
+2026-07-12 10:24:34 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=64.89ms
+2026-07-12 10:24:34 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=79.29ms
+2026-07-12 10:24:34 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=58.05ms
+2026-07-12 10:24:34 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=59.48ms
+2026-07-12 10:24:34 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=64.69ms
+2026-07-12 10:24:34 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=61.91ms
+2026-07-12 10:24:34 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=65.69ms
+2026-07-12 10:24:34 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=58.67ms
+2026-07-12 10:24:34 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=57.67ms
+2026-07-12 10:24:34 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=63.11ms
+2026-07-12 10:24:34 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=56.58ms
+2026-07-12 10:24:35 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=59.12ms
+2026-07-12 10:24:35 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=64.8ms
+2026-07-12 10:24:35 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=61.12ms
+2026-07-12 10:24:35 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=53.39ms
+2026-07-12 10:24:35 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=59.79ms
+2026-07-12 10:24:35 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=61.18ms
+2026-07-12 10:24:35 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=67.37ms
+2026-07-12 10:24:35 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=61.33ms
+2026-07-12 10:24:35 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=75.27ms
+2026-07-12 10:24:35 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=68.54ms
+2026-07-12 10:24:35 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=64.13ms
+2026-07-12 10:24:35 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=63.56ms
+2026-07-12 10:24:35 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=60.31ms
+2026-07-12 10:24:35 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=61.6ms
+2026-07-12 10:24:35 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=61.48ms
+2026-07-12 10:24:36 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=59.15ms
+2026-07-12 10:24:36 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=63.25ms
+2026-07-12 10:24:36 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=62.26ms
+2026-07-12 10:24:36 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=62.98ms
+2026-07-12 10:24:36 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=61.11ms
+2026-07-12 10:24:36 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=62.37ms
+2026-07-12 10:24:36 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=90.38ms
+2026-07-12 10:24:36 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=94.5ms
+2026-07-12 10:24:36 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=81.09ms
+2026-07-12 10:24:36 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=63.07ms
+2026-07-12 10:24:36 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=60.1ms
+2026-07-12 10:24:36 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=61.35ms
+2026-07-12 10:24:36 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=63.91ms
+2026-07-12 10:24:36 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=61.62ms
+2026-07-12 10:24:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=57.57ms
+2026-07-12 10:24:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=59.65ms
+2026-07-12 10:24:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=61.95ms
+2026-07-12 10:24:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=64.08ms
+2026-07-12 10:24:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=60.36ms
+2026-07-12 10:24:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=60.8ms
+2026-07-12 10:24:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=62.1ms
+2026-07-12 10:24:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=63.88ms
+2026-07-12 10:24:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=65.43ms
+2026-07-12 10:24:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=60.6ms
+2026-07-12 10:24:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=62.37ms
+2026-07-12 10:24:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=62.23ms
+2026-07-12 10:24:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=59.41ms
+2026-07-12 10:24:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=63.12ms
+2026-07-12 10:24:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=59.49ms
+2026-07-12 10:24:38 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=57.07ms
+2026-07-12 10:24:38 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=57.69ms
+2026-07-12 10:24:38 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=60.21ms
+2026-07-12 10:24:38 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=50.06ms
+2026-07-12 10:24:38 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=95.18ms
+2026-07-12 10:24:38 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=97.37ms
+2026-07-12 10:24:38 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=89.65ms
+2026-07-12 10:24:38 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=80.28ms
+2026-07-12 10:24:38 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=85.1ms
+2026-07-12 10:24:38 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=136.97ms
+2026-07-12 10:24:38 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:24:38 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:24:38 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:24:38 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:24:38 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:24:38 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:24:38 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:24:38 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:24:38 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:24:38 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:24:38 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:24:38 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:24:38 | INFO     | Arret de l'API.
+2026-07-12 10:25:28 | INFO     | Modele charge depuis models/model.pkl
+2026-07-12 10:25:28 | WARNING  | Acces refuse : cle API invalide ou absente (None)
+2026-07-12 10:25:28 | WARNING  | Acces refuse : cle API invalide ou absente ('cle-totalement-invalide')
+2026-07-12 10:25:28 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=70.72ms
+2026-07-12 10:25:28 | WARNING  | Requete invalide sur /predict : [{'type': 'greater_than_equal', 'loc': ('body', 'existing_credits'), 'msg': 'Input should be greater than or equal to 0', 'input': -5, 'ctx': {'ge': 0}}]
+2026-07-12 10:25:28 | WARNING  | Requete invalide sur /predict : [{'type': 'float_parsing', 'loc': ('body', 'annual_income_normalized'), 'msg': 'Input should be a valid number, unable to parse string as a number', 'input': 'abc'}]
+2026-07-12 10:25:28 | WARNING  | Requete invalide sur /predict : [{'type': 'less_than_equal', 'loc': ('body', 'debt_ratio'), 'msg': 'Input should be less than or equal to 1', 'input': 999, 'ctx': {'le': 1.0}}]
+2026-07-12 10:25:28 | WARNING  | Requete invalide sur /predict : [{'type': 'missing', 'loc': ('body', 'debt_ratio'), 'msg': 'Field required', 'input': {'gender_encoded': 1, 'marital_status_encoded': 2, 'housing_status_encoded': 2, 'annual_income_normalized': 0.17, 'savings_balance_normalized': 1.04, 'checking_balance_normalized': 0.13, 'loan_amount_normalized': 0.63, 'loan_duration_months': 24, 'existing_credits': 1, 'past_due_count': 0, 'credit_history_score': 0.5, 'loan_purpose_car': True, 'loan_purpose_education': False, 'loan_purpose_health': False, 'loan_purpose_housing': False, 'loan_purpose_other': False, 'region_Assaba': False, 'region_Brakna': False, 'region_Gorgol': False, 'region_Guidimakha': False, 'region_Hodh_Ech_Chargui': False, 'region_Hodh_El_Gharbi': False, 'region_Inchiri': False, 'region_Nouadhibou': False, 'region_Nouakchott': True, 'region_Tagant': False, 'region_Trarza': False, 'education_level_master': False, 'education_level_phd': False, 'education_level_primary': False, 'education_level_secondary': True, 'employment_status_public_sector': True, 'employment_status_retired': False, 'employment_status_self_employed': False, 'employment_status_student': False, 'employment_status_unemployed': False}}]
+2026-07-12 10:25:28 | WARNING  | Requete invalide sur /predict : [{'type': 'extra_forbidden', 'loc': ('body', 'is_admin'), 'msg': 'Extra inputs are not permitted', 'input': True}]
+2026-07-12 10:25:28 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=52.87ms
+2026-07-12 10:25:28 | WARNING  | Requete invalide sur /predict : [{'type': 'greater_than_equal', 'loc': ('body', 'existing_credits'), 'msg': 'Input should be greater than or equal to 0', 'input': -5, 'ctx': {'ge': 0}}]
+2026-07-12 10:25:28 | WARNING  | Acces refuse : cle API invalide ou absente ('cle-totalement-invalide')
+2026-07-12 10:25:28 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=61.17ms
+2026-07-12 10:25:28 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=51.09ms
+2026-07-12 10:25:28 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=86.49ms
+2026-07-12 10:25:28 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=54.38ms
+2026-07-12 10:25:28 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.72ms
+2026-07-12 10:25:29 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.63ms
+2026-07-12 10:25:29 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.1ms
+2026-07-12 10:25:29 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.06ms
+2026-07-12 10:25:29 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.6ms
+2026-07-12 10:25:29 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.85ms
+2026-07-12 10:25:29 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.22ms
+2026-07-12 10:25:29 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.24ms
+2026-07-12 10:25:29 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.54ms
+2026-07-12 10:25:29 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=43.0ms
+2026-07-12 10:25:29 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=45.52ms
+2026-07-12 10:25:29 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=43.56ms
+2026-07-12 10:25:29 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=56.19ms
+2026-07-12 10:25:29 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=59.86ms
+2026-07-12 10:25:29 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=67.05ms
+2026-07-12 10:25:29 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=58.35ms
+2026-07-12 10:25:29 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=60.05ms
+2026-07-12 10:25:29 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=59.23ms
+2026-07-12 10:25:29 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=59.4ms
+2026-07-12 10:25:29 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=56.29ms
+2026-07-12 10:25:29 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=56.65ms
+2026-07-12 10:25:30 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=113.37ms
+2026-07-12 10:25:30 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=55.86ms
+2026-07-12 10:25:30 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=55.77ms
+2026-07-12 10:25:30 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=45.34ms
+2026-07-12 10:25:30 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=44.56ms
+2026-07-12 10:25:30 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=55.26ms
+2026-07-12 10:25:30 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=53.35ms
+2026-07-12 10:25:30 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=57.16ms
+2026-07-12 10:25:30 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=60.23ms
+2026-07-12 10:25:30 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=46.37ms
+2026-07-12 10:25:30 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=55.12ms
+2026-07-12 10:25:30 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=44.88ms
+2026-07-12 10:25:30 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=46.6ms
+2026-07-12 10:25:30 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=34.39ms
+2026-07-12 10:25:30 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=33.74ms
+2026-07-12 10:25:30 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=45.21ms
+2026-07-12 10:25:30 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=36.96ms
+2026-07-12 10:25:30 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=56.51ms
+2026-07-12 10:25:31 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=49.97ms
+2026-07-12 10:25:31 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=59.85ms
+2026-07-12 10:25:31 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=58.14ms
+2026-07-12 10:25:31 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=55.59ms
+2026-07-12 10:25:31 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=54.62ms
+2026-07-12 10:25:31 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=56.15ms
+2026-07-12 10:25:31 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=63.02ms
+2026-07-12 10:25:31 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=65.98ms
+2026-07-12 10:25:31 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=78.26ms
+2026-07-12 10:25:31 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=58.92ms
+2026-07-12 10:25:31 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=61.19ms
+2026-07-12 10:25:31 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=58.94ms
+2026-07-12 10:25:31 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=66.26ms
+2026-07-12 10:25:31 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=66.91ms
+2026-07-12 10:25:31 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=65.11ms
+2026-07-12 10:25:32 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=68.33ms
+2026-07-12 10:25:32 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=71.04ms
+2026-07-12 10:25:32 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=61.58ms
+2026-07-12 10:25:32 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=60.35ms
+2026-07-12 10:25:32 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=61.51ms
+2026-07-12 10:25:32 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=59.85ms
+2026-07-12 10:25:32 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=64.28ms
+2026-07-12 10:25:32 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=59.88ms
+2026-07-12 10:25:32 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=63.78ms
+2026-07-12 10:25:32 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=59.05ms
+2026-07-12 10:25:32 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=57.77ms
+2026-07-12 10:25:32 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=55.54ms
+2026-07-12 10:25:32 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=56.31ms
+2026-07-12 10:25:32 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=55.67ms
+2026-07-12 10:25:32 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=58.95ms
+2026-07-12 10:25:32 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=61.27ms
+2026-07-12 10:25:33 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=61.75ms
+2026-07-12 10:25:33 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=45.53ms
+2026-07-12 10:25:33 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=63.31ms
+2026-07-12 10:25:33 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=59.34ms
+2026-07-12 10:25:33 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=47.91ms
+2026-07-12 10:25:33 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=61.57ms
+2026-07-12 10:25:33 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=58.71ms
+2026-07-12 10:25:33 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=59.9ms
+2026-07-12 10:25:33 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=58.52ms
+2026-07-12 10:25:33 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=58.85ms
+2026-07-12 10:25:33 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=62.41ms
+2026-07-12 10:25:33 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=64.84ms
+2026-07-12 10:25:33 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=60.52ms
+2026-07-12 10:25:33 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=59.49ms
+2026-07-12 10:25:33 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=60.53ms
+2026-07-12 10:25:33 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=61.34ms
+2026-07-12 10:25:34 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=65.12ms
+2026-07-12 10:25:34 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=61.78ms
+2026-07-12 10:25:34 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=82.72ms
+2026-07-12 10:25:34 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=64.33ms
+2026-07-12 10:25:34 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=59.97ms
+2026-07-12 10:25:34 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=56.69ms
+2026-07-12 10:25:34 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=55.99ms
+2026-07-12 10:25:34 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=59.66ms
+2026-07-12 10:25:34 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:25:34 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:25:34 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:25:34 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:25:34 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:25:34 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:25:34 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:25:34 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:25:34 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:25:34 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:25:34 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:25:34 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:25:34 | INFO     | Arret de l'API.
+2026-07-12 10:29:49 | WARNING  | Acces refuse : cle API invalide ou absente (None)
+2026-07-12 10:30:37 | WARNING  | Acces refuse : cle API invalide ou absente (None)
+2026-07-12 10:30:39 | WARNING  | Acces refuse : cle API invalide ou absente (None)
+2026-07-12 10:36:15 | INFO     | POST /predict OK | client=127.0.0.1 | prediction=Good Credit | confiance=Moyenne | temps=374.87ms
+2026-07-12 10:37:48 | INFO     | POST /predict OK | client=127.0.0.1 | prediction=Bad Credit | confiance=Faible | temps=103.33ms
+2026-07-12 10:37:50 | INFO     | POST /predict OK | client=127.0.0.1 | prediction=Bad Credit | confiance=Faible | temps=83.75ms
+2026-07-12 10:39:01 | INFO     | Modele charge depuis models/model.pkl
+2026-07-12 10:39:01 | WARNING  | Acces refuse : cle API invalide ou absente (None)
+2026-07-12 10:39:01 | WARNING  | Acces refuse : cle API invalide ou absente ('cle-totalement-invalide')
+2026-07-12 10:39:01 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=71.71ms
+2026-07-12 10:39:01 | WARNING  | Requete invalide sur /predict : [{'type': 'greater_than_equal', 'loc': ('body', 'existing_credits'), 'msg': 'Input should be greater than or equal to 0', 'input': -5, 'ctx': {'ge': 0}}]
+2026-07-12 10:39:01 | WARNING  | Requete invalide sur /predict : [{'type': 'float_parsing', 'loc': ('body', 'annual_income_normalized'), 'msg': 'Input should be a valid number, unable to parse string as a number', 'input': 'abc'}]
+2026-07-12 10:39:01 | WARNING  | Requete invalide sur /predict : [{'type': 'less_than_equal', 'loc': ('body', 'debt_ratio'), 'msg': 'Input should be less than or equal to 1', 'input': 999, 'ctx': {'le': 1.0}}]
+2026-07-12 10:39:01 | WARNING  | Requete invalide sur /predict : [{'type': 'missing', 'loc': ('body', 'debt_ratio'), 'msg': 'Field required', 'input': {'gender_encoded': 1, 'marital_status_encoded': 2, 'housing_status_encoded': 2, 'annual_income_normalized': 0.17, 'savings_balance_normalized': 1.04, 'checking_balance_normalized': 0.13, 'loan_amount_normalized': 0.63, 'loan_duration_months': 24, 'existing_credits': 1, 'past_due_count': 0, 'credit_history_score': 0.5, 'loan_purpose_car': True, 'loan_purpose_education': False, 'loan_purpose_health': False, 'loan_purpose_housing': False, 'loan_purpose_other': False, 'region_Assaba': False, 'region_Brakna': False, 'region_Gorgol': False, 'region_Guidimakha': False, 'region_Hodh_Ech_Chargui': False, 'region_Hodh_El_Gharbi': False, 'region_Inchiri': False, 'region_Nouadhibou': False, 'region_Nouakchott': True, 'region_Tagant': False, 'region_Trarza': False, 'education_level_master': False, 'education_level_phd': False, 'education_level_primary': False, 'education_level_secondary': True, 'employment_status_public_sector': True, 'employment_status_retired': False, 'employment_status_self_employed': False, 'employment_status_student': False, 'employment_status_unemployed': False}}]
+2026-07-12 10:39:01 | WARNING  | Requete invalide sur /predict : [{'type': 'extra_forbidden', 'loc': ('body', 'is_admin'), 'msg': 'Extra inputs are not permitted', 'input': True}]
+2026-07-12 10:39:01 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=64.26ms
+2026-07-12 10:39:01 | WARNING  | Requete invalide sur /predict : [{'type': 'greater_than_equal', 'loc': ('body', 'existing_credits'), 'msg': 'Input should be greater than or equal to 0', 'input': -5, 'ctx': {'ge': 0}}]
+2026-07-12 10:39:01 | WARNING  | Acces refuse : cle API invalide ou absente ('cle-totalement-invalide')
+2026-07-12 10:39:01 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=62.67ms
+2026-07-12 10:39:01 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=47.72ms
+2026-07-12 10:39:01 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=64.56ms
+2026-07-12 10:39:02 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=71.12ms
+2026-07-12 10:39:02 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=70.34ms
+2026-07-12 10:39:02 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=58.54ms
+2026-07-12 10:39:02 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=42.49ms
+2026-07-12 10:39:02 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=54.8ms
+2026-07-12 10:39:02 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=55.58ms
+2026-07-12 10:39:02 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=36.06ms
+2026-07-12 10:39:02 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.05ms
+2026-07-12 10:39:02 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.08ms
+2026-07-12 10:39:02 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=42.36ms
+2026-07-12 10:39:02 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=47.55ms
+2026-07-12 10:39:02 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=30.94ms
+2026-07-12 10:39:02 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=54.99ms
+2026-07-12 10:39:02 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=35.01ms
+2026-07-12 10:39:02 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=44.2ms
+2026-07-12 10:39:02 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=63.2ms
+2026-07-12 10:39:02 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=60.77ms
+2026-07-12 10:39:02 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=49.77ms
+2026-07-12 10:39:02 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=48.39ms
+2026-07-12 10:39:03 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=56.67ms
+2026-07-12 10:39:03 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=35.63ms
+2026-07-12 10:39:03 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=104.55ms
+2026-07-12 10:39:03 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=52.66ms
+2026-07-12 10:39:03 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=69.97ms
+2026-07-12 10:39:03 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=43.16ms
+2026-07-12 10:39:03 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=56.27ms
+2026-07-12 10:39:03 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=34.34ms
+2026-07-12 10:39:03 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=30.81ms
+2026-07-12 10:39:03 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=30.74ms
+2026-07-12 10:39:03 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.43ms
+2026-07-12 10:39:03 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.13ms
+2026-07-12 10:39:03 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.63ms
+2026-07-12 10:39:03 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=44.33ms
+2026-07-12 10:39:03 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=30.75ms
+2026-07-12 10:39:03 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.55ms
+2026-07-12 10:39:03 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.56ms
+2026-07-12 10:39:03 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=44.1ms
+2026-07-12 10:39:03 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=44.59ms
+2026-07-12 10:39:03 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.07ms
+2026-07-12 10:39:03 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.09ms
+2026-07-12 10:39:03 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.7ms
+2026-07-12 10:39:04 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.56ms
+2026-07-12 10:39:04 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.57ms
+2026-07-12 10:39:04 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.08ms
+2026-07-12 10:39:04 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.55ms
+2026-07-12 10:39:04 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.99ms
+2026-07-12 10:39:04 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=45.45ms
+2026-07-12 10:39:04 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=33.87ms
+2026-07-12 10:39:04 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.01ms
+2026-07-12 10:39:04 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.05ms
+2026-07-12 10:39:04 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=34.04ms
+2026-07-12 10:39:04 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=53.15ms
+2026-07-12 10:39:04 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=33.09ms
+2026-07-12 10:39:04 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.01ms
+2026-07-12 10:39:04 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=30.56ms
+2026-07-12 10:39:04 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=43.1ms
+2026-07-12 10:39:04 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=33.02ms
+2026-07-12 10:39:04 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.79ms
+2026-07-12 10:39:04 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=30.76ms
+2026-07-12 10:39:04 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=30.89ms
+2026-07-12 10:39:04 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=40.57ms
+2026-07-12 10:39:04 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=30.84ms
+2026-07-12 10:39:04 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=30.99ms
+2026-07-12 10:39:04 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.24ms
+2026-07-12 10:39:04 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.07ms
+2026-07-12 10:39:04 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.19ms
+2026-07-12 10:39:04 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=30.31ms
+2026-07-12 10:39:05 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=61.53ms
+2026-07-12 10:39:05 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=60.11ms
+2026-07-12 10:39:05 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=34.7ms
+2026-07-12 10:39:05 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=56.41ms
+2026-07-12 10:39:05 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=44.37ms
+2026-07-12 10:39:05 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=55.44ms
+2026-07-12 10:39:05 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=42.92ms
+2026-07-12 10:39:05 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.51ms
+2026-07-12 10:39:05 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=33.79ms
+2026-07-12 10:39:05 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=44.16ms
+2026-07-12 10:39:05 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.54ms
+2026-07-12 10:39:05 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.2ms
+2026-07-12 10:39:05 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=43.15ms
+2026-07-12 10:39:05 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=58.43ms
+2026-07-12 10:39:05 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=58.1ms
+2026-07-12 10:39:05 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=50.64ms
+2026-07-12 10:39:05 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=42.87ms
+2026-07-12 10:39:05 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.83ms
+2026-07-12 10:39:05 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.85ms
+2026-07-12 10:39:05 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.53ms
+2026-07-12 10:39:05 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.63ms
+2026-07-12 10:39:05 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=34.67ms
+2026-07-12 10:39:06 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=44.73ms
+2026-07-12 10:39:06 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=55.51ms
+2026-07-12 10:39:06 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=48.32ms
+2026-07-12 10:39:06 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.52ms
+2026-07-12 10:39:06 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=56.35ms
+2026-07-12 10:39:06 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=45.19ms
+2026-07-12 10:39:06 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:39:06 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:39:06 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:39:06 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:39:06 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:39:06 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:39:06 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:39:06 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:39:06 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:39:06 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:39:06 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:39:06 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:39:06 | INFO     | Arret de l'API.
+2026-07-12 10:39:19 | INFO     | Modele charge depuis models/model.pkl
+2026-07-12 10:39:19 | WARNING  | Acces refuse : cle API invalide ou absente (None)
+2026-07-12 10:39:19 | WARNING  | Acces refuse : cle API invalide ou absente ('cle-totalement-invalide')
+2026-07-12 10:39:19 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=60.14ms
+2026-07-12 10:39:19 | WARNING  | Requete invalide sur /predict : [{'type': 'greater_than_equal', 'loc': ('body', 'existing_credits'), 'msg': 'Input should be greater than or equal to 0', 'input': -5, 'ctx': {'ge': 0}}]
+2026-07-12 10:39:19 | WARNING  | Requete invalide sur /predict : [{'type': 'float_parsing', 'loc': ('body', 'annual_income_normalized'), 'msg': 'Input should be a valid number, unable to parse string as a number', 'input': 'abc'}]
+2026-07-12 10:39:19 | WARNING  | Requete invalide sur /predict : [{'type': 'less_than_equal', 'loc': ('body', 'debt_ratio'), 'msg': 'Input should be less than or equal to 1', 'input': 999, 'ctx': {'le': 1.0}}]
+2026-07-12 10:39:19 | WARNING  | Requete invalide sur /predict : [{'type': 'missing', 'loc': ('body', 'debt_ratio'), 'msg': 'Field required', 'input': {'gender_encoded': 1, 'marital_status_encoded': 2, 'housing_status_encoded': 2, 'annual_income_normalized': 0.17, 'savings_balance_normalized': 1.04, 'checking_balance_normalized': 0.13, 'loan_amount_normalized': 0.63, 'loan_duration_months': 24, 'existing_credits': 1, 'past_due_count': 0, 'credit_history_score': 0.5, 'loan_purpose_car': True, 'loan_purpose_education': False, 'loan_purpose_health': False, 'loan_purpose_housing': False, 'loan_purpose_other': False, 'region_Assaba': False, 'region_Brakna': False, 'region_Gorgol': False, 'region_Guidimakha': False, 'region_Hodh_Ech_Chargui': False, 'region_Hodh_El_Gharbi': False, 'region_Inchiri': False, 'region_Nouadhibou': False, 'region_Nouakchott': True, 'region_Tagant': False, 'region_Trarza': False, 'education_level_master': False, 'education_level_phd': False, 'education_level_primary': False, 'education_level_secondary': True, 'employment_status_public_sector': True, 'employment_status_retired': False, 'employment_status_self_employed': False, 'employment_status_student': False, 'employment_status_unemployed': False}}]
+2026-07-12 10:39:19 | WARNING  | Requete invalide sur /predict : [{'type': 'extra_forbidden', 'loc': ('body', 'is_admin'), 'msg': 'Extra inputs are not permitted', 'input': True}]
+2026-07-12 10:39:19 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=62.2ms
+2026-07-12 10:39:19 | WARNING  | Requete invalide sur /predict : [{'type': 'greater_than_equal', 'loc': ('body', 'existing_credits'), 'msg': 'Input should be greater than or equal to 0', 'input': -5, 'ctx': {'ge': 0}}]
+2026-07-12 10:39:19 | WARNING  | Acces refuse : cle API invalide ou absente ('cle-totalement-invalide')
+2026-07-12 10:39:19 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=50.79ms
+2026-07-12 10:39:19 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=44.96ms
+2026-07-12 10:39:19 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=33.06ms
+2026-07-12 10:39:19 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.85ms
+2026-07-12 10:39:19 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=43.63ms
+2026-07-12 10:39:19 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=57.91ms
+2026-07-12 10:39:19 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.02ms
+2026-07-12 10:39:19 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=43.15ms
+2026-07-12 10:39:20 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=33.12ms
+2026-07-12 10:39:20 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=42.48ms
+2026-07-12 10:39:20 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=42.72ms
+2026-07-12 10:39:20 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=42.6ms
+2026-07-12 10:39:20 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=33.85ms
+2026-07-12 10:39:20 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=33.01ms
+2026-07-12 10:39:20 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.49ms
+2026-07-12 10:39:20 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=44.07ms
+2026-07-12 10:39:20 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.73ms
+2026-07-12 10:39:20 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.73ms
+2026-07-12 10:39:20 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=45.71ms
+2026-07-12 10:39:20 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=61.08ms
+2026-07-12 10:39:20 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=59.94ms
+2026-07-12 10:39:20 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=48.58ms
+2026-07-12 10:39:20 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=43.57ms
+2026-07-12 10:39:20 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=34.07ms
+2026-07-12 10:39:20 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=92.92ms
+2026-07-12 10:39:20 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=57.18ms
+2026-07-12 10:39:20 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=58.05ms
+2026-07-12 10:39:20 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=56.3ms
+2026-07-12 10:39:20 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=33.21ms
+2026-07-12 10:39:21 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=34.82ms
+2026-07-12 10:39:21 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=54.16ms
+2026-07-12 10:39:21 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=54.42ms
+2026-07-12 10:39:21 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=45.57ms
+2026-07-12 10:39:21 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=42.63ms
+2026-07-12 10:39:21 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=54.16ms
+2026-07-12 10:39:21 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=42.72ms
+2026-07-12 10:39:21 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.02ms
+2026-07-12 10:39:21 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.04ms
+2026-07-12 10:39:21 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.19ms
+2026-07-12 10:39:21 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=43.81ms
+2026-07-12 10:39:21 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=56.78ms
+2026-07-12 10:39:21 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=46.51ms
+2026-07-12 10:39:21 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=35.06ms
+2026-07-12 10:39:21 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.33ms
+2026-07-12 10:39:21 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=33.01ms
+2026-07-12 10:39:21 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=55.82ms
+2026-07-12 10:39:21 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=44.12ms
+2026-07-12 10:39:21 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=33.1ms
+2026-07-12 10:39:21 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=43.28ms
+2026-07-12 10:39:21 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=55.92ms
+2026-07-12 10:39:22 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=54.77ms
+2026-07-12 10:39:22 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.42ms
+2026-07-12 10:39:22 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=30.78ms
+2026-07-12 10:39:22 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=30.89ms
+2026-07-12 10:39:22 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.2ms
+2026-07-12 10:39:22 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=56.12ms
+2026-07-12 10:39:22 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=61.4ms
+2026-07-12 10:39:22 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=59.78ms
+2026-07-12 10:39:22 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=65.2ms
+2026-07-12 10:39:22 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=51.67ms
+2026-07-12 10:39:22 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=53.29ms
+2026-07-12 10:39:22 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=47.96ms
+2026-07-12 10:39:22 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=33.01ms
+2026-07-12 10:39:22 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=57.6ms
+2026-07-12 10:39:22 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=59.56ms
+2026-07-12 10:39:22 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=46.59ms
+2026-07-12 10:39:22 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.44ms
+2026-07-12 10:39:22 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=34.43ms
+2026-07-12 10:39:22 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.06ms
+2026-07-12 10:39:22 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.37ms
+2026-07-12 10:39:22 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=42.09ms
+2026-07-12 10:39:23 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=34.06ms
+2026-07-12 10:39:23 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.66ms
+2026-07-12 10:39:23 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=30.94ms
+2026-07-12 10:39:23 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.07ms
+2026-07-12 10:39:23 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.01ms
+2026-07-12 10:39:23 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.9ms
+2026-07-12 10:39:23 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=43.57ms
+2026-07-12 10:39:23 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=43.27ms
+2026-07-12 10:39:23 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.07ms
+2026-07-12 10:39:23 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.57ms
+2026-07-12 10:39:23 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.54ms
+2026-07-12 10:39:23 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.23ms
+2026-07-12 10:39:23 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.54ms
+2026-07-12 10:39:23 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.16ms
+2026-07-12 10:39:23 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.9ms
+2026-07-12 10:39:23 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.43ms
+2026-07-12 10:39:23 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.87ms
+2026-07-12 10:39:23 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.11ms
+2026-07-12 10:39:23 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.56ms
+2026-07-12 10:39:23 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=30.65ms
+2026-07-12 10:39:23 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=33.85ms
+2026-07-12 10:39:23 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.05ms
+2026-07-12 10:39:23 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.79ms
+2026-07-12 10:39:23 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.53ms
+2026-07-12 10:39:23 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.14ms
+2026-07-12 10:39:23 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.77ms
+2026-07-12 10:39:23 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.9ms
+2026-07-12 10:39:23 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:39:23 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:39:23 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:39:23 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:39:23 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:39:23 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:39:23 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:39:23 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:39:23 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:39:23 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:39:23 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:39:23 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:39:23 | INFO     | Arret de l'API.
+2026-07-12 10:39:36 | INFO     | Modele charge depuis models/model.pkl
+2026-07-12 10:39:36 | WARNING  | Acces refuse : cle API invalide ou absente (None)
+2026-07-12 10:39:36 | WARNING  | Acces refuse : cle API invalide ou absente ('cle-totalement-invalide')
+2026-07-12 10:39:36 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=52.51ms
+2026-07-12 10:39:36 | WARNING  | Requete invalide sur /predict : [{'type': 'greater_than_equal', 'loc': ('body', 'existing_credits'), 'msg': 'Input should be greater than or equal to 0', 'input': -5, 'ctx': {'ge': 0}}]
+2026-07-12 10:39:36 | WARNING  | Requete invalide sur /predict : [{'type': 'float_parsing', 'loc': ('body', 'annual_income_normalized'), 'msg': 'Input should be a valid number, unable to parse string as a number', 'input': 'abc'}]
+2026-07-12 10:39:36 | WARNING  | Requete invalide sur /predict : [{'type': 'less_than_equal', 'loc': ('body', 'debt_ratio'), 'msg': 'Input should be less than or equal to 1', 'input': 999, 'ctx': {'le': 1.0}}]
+2026-07-12 10:39:36 | WARNING  | Requete invalide sur /predict : [{'type': 'missing', 'loc': ('body', 'debt_ratio'), 'msg': 'Field required', 'input': {'gender_encoded': 1, 'marital_status_encoded': 2, 'housing_status_encoded': 2, 'annual_income_normalized': 0.17, 'savings_balance_normalized': 1.04, 'checking_balance_normalized': 0.13, 'loan_amount_normalized': 0.63, 'loan_duration_months': 24, 'existing_credits': 1, 'past_due_count': 0, 'credit_history_score': 0.5, 'loan_purpose_car': True, 'loan_purpose_education': False, 'loan_purpose_health': False, 'loan_purpose_housing': False, 'loan_purpose_other': False, 'region_Assaba': False, 'region_Brakna': False, 'region_Gorgol': False, 'region_Guidimakha': False, 'region_Hodh_Ech_Chargui': False, 'region_Hodh_El_Gharbi': False, 'region_Inchiri': False, 'region_Nouadhibou': False, 'region_Nouakchott': True, 'region_Tagant': False, 'region_Trarza': False, 'education_level_master': False, 'education_level_phd': False, 'education_level_primary': False, 'education_level_secondary': True, 'employment_status_public_sector': True, 'employment_status_retired': False, 'employment_status_self_employed': False, 'employment_status_student': False, 'employment_status_unemployed': False}}]
+2026-07-12 10:39:36 | WARNING  | Requete invalide sur /predict : [{'type': 'extra_forbidden', 'loc': ('body', 'is_admin'), 'msg': 'Extra inputs are not permitted', 'input': True}]
+2026-07-12 10:39:36 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=50.42ms
+2026-07-12 10:39:36 | WARNING  | Requete invalide sur /predict : [{'type': 'greater_than_equal', 'loc': ('body', 'existing_credits'), 'msg': 'Input should be greater than or equal to 0', 'input': -5, 'ctx': {'ge': 0}}]
+2026-07-12 10:39:36 | WARNING  | Acces refuse : cle API invalide ou absente ('cle-totalement-invalide')
+2026-07-12 10:39:36 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=59.89ms
+2026-07-12 10:39:36 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=47.88ms
+2026-07-12 10:39:36 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=56.96ms
+2026-07-12 10:39:36 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=33.57ms
+2026-07-12 10:39:36 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.19ms
+2026-07-12 10:39:36 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.03ms
+2026-07-12 10:39:36 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.07ms
+2026-07-12 10:39:36 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=33.38ms
+2026-07-12 10:39:36 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.66ms
+2026-07-12 10:39:36 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=42.62ms
+2026-07-12 10:39:36 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.14ms
+2026-07-12 10:39:36 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=44.12ms
+2026-07-12 10:39:36 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=34.32ms
+2026-07-12 10:39:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=30.8ms
+2026-07-12 10:39:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.4ms
+2026-07-12 10:39:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=30.55ms
+2026-07-12 10:39:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.05ms
+2026-07-12 10:39:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.57ms
+2026-07-12 10:39:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=45.08ms
+2026-07-12 10:39:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.51ms
+2026-07-12 10:39:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=54.52ms
+2026-07-12 10:39:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=44.76ms
+2026-07-12 10:39:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.53ms
+2026-07-12 10:39:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.23ms
+2026-07-12 10:39:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=76.22ms
+2026-07-12 10:39:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=45.13ms
+2026-07-12 10:39:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=34.72ms
+2026-07-12 10:39:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=43.59ms
+2026-07-12 10:39:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=55.64ms
+2026-07-12 10:39:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.08ms
+2026-07-12 10:39:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.56ms
+2026-07-12 10:39:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.15ms
+2026-07-12 10:39:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.02ms
+2026-07-12 10:39:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.35ms
+2026-07-12 10:39:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=30.86ms
+2026-07-12 10:39:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.65ms
+2026-07-12 10:39:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.95ms
+2026-07-12 10:39:37 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.07ms
+2026-07-12 10:39:38 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.01ms
+2026-07-12 10:39:38 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=53.56ms
+2026-07-12 10:39:38 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=58.4ms
+2026-07-12 10:39:38 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=63.9ms
+2026-07-12 10:39:38 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=59.04ms
+2026-07-12 10:39:38 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=56.44ms
+2026-07-12 10:39:38 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=44.13ms
+2026-07-12 10:39:38 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.04ms
+2026-07-12 10:39:38 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=35.05ms
+2026-07-12 10:39:38 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=53.59ms
+2026-07-12 10:39:38 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=47.7ms
+2026-07-12 10:39:38 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.56ms
+2026-07-12 10:39:38 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=30.77ms
+2026-07-12 10:39:38 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=41.49ms
+2026-07-12 10:39:38 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=33.36ms
+2026-07-12 10:39:38 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.06ms
+2026-07-12 10:39:38 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.07ms
+2026-07-12 10:39:38 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.05ms
+2026-07-12 10:39:38 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=33.04ms
+2026-07-12 10:39:38 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=44.09ms
+2026-07-12 10:39:38 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=43.65ms
+2026-07-12 10:39:38 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=44.03ms
+2026-07-12 10:39:39 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=42.68ms
+2026-07-12 10:39:39 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=34.04ms
+2026-07-12 10:39:39 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.2ms
+2026-07-12 10:39:39 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.14ms
+2026-07-12 10:39:39 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.23ms
+2026-07-12 10:39:39 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.0ms
+2026-07-12 10:39:39 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.04ms
+2026-07-12 10:39:39 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=33.07ms
+2026-07-12 10:39:39 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=42.87ms
+2026-07-12 10:39:39 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=55.36ms
+2026-07-12 10:39:39 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=36.5ms
+2026-07-12 10:39:39 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=45.24ms
+2026-07-12 10:39:39 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=44.98ms
+2026-07-12 10:39:39 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=33.83ms
+2026-07-12 10:39:39 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.22ms
+2026-07-12 10:39:39 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.64ms
+2026-07-12 10:39:39 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.03ms
+2026-07-12 10:39:39 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.52ms
+2026-07-12 10:39:39 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=58.3ms
+2026-07-12 10:39:39 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=57.09ms
+2026-07-12 10:39:39 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=45.15ms
+2026-07-12 10:39:39 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=47.12ms
+2026-07-12 10:39:39 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.04ms
+2026-07-12 10:39:39 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=31.69ms
+2026-07-12 10:39:40 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=42.11ms
+2026-07-12 10:39:40 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=42.6ms
+2026-07-12 10:39:40 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=42.29ms
+2026-07-12 10:39:40 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=45.22ms
+2026-07-12 10:39:40 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=43.96ms
+2026-07-12 10:39:40 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=32.64ms
+2026-07-12 10:39:40 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=56.63ms
+2026-07-12 10:39:40 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=45.78ms
+2026-07-12 10:39:40 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=57.27ms
+2026-07-12 10:39:40 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=46.95ms
+2026-07-12 10:39:40 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=47.1ms
+2026-07-12 10:39:40 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=44.57ms
+2026-07-12 10:39:40 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=44.54ms
+2026-07-12 10:39:40 | INFO     | POST /predict OK | client=testclient | prediction=Bad Credit | confiance=Faible | temps=44.12ms
+2026-07-12 10:39:40 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:39:40 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:39:40 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:39:40 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:39:40 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:39:40 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:39:40 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:39:40 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:39:40 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:39:40 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:39:40 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:39:40 | WARNING  | Limite de requetes depassee pour testclient
+2026-07-12 10:39:40 | INFO     | Arret de l'API.
+2026-07-12 10:46:00 | INFO     | Modele charge depuis models/model.pkl
+2026-07-12 10:46:04 | WARNING  | Acces refuse : cle API invalide ou absente (None)
+2026-07-12 10:46:17 | WARNING  | Acces refuse : cle API invalide ou absente (None)
