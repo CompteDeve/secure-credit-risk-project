@@ -1,0 +1,34 @@
+# ============================================
+# MILESTONE 3 - ETAPE 3 : docker-compose.yml
+# ============================================
+# Permet de lancer toute l'application avec une seule commande :
+#   docker compose up
+#
+# Avantages par rapport a "docker run" direct :
+# - configuration centralisee (port, variables d'environnement, volumes)
+# - redemarrage automatique en cas de crash
+# - facile a etendre plus tard (ex. ajouter une base de donnees,
+#   un reverse proxy, etc.)
+
+services:
+  api:
+    build: .
+    container_name: credit-risk-api
+    ports:
+      - "8080:8080"
+    environment:
+      # Change cette valeur en production (ou passe-la via un fichier
+      # .env, voir la remarque plus bas).
+      - API_KEY=demo-key-milestone2-2026
+    volumes:
+      # Les logs generes dans le conteneur sont ecrits directement sur
+      # la machine hote, dans ./logs -- pratique pour les consulter
+      # sans devoir rentrer dans le conteneur.
+      - ./logs:/app/logs
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8080/')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s

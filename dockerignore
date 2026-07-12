@@ -1,0 +1,17 @@
+# Fichiers/dossiers a ne PAS copier dans l'image Docker
+# (accelere le build et evite de copier des fichiers inutiles ou sensibles)
+
+__pycache__/
+*.pyc
+.venv/
+venv/
+.git/
+.pytest_cache/
+logs/
+attacks/
+tests/
+docs/
+data/
+notebooks/
+*.ipynb
+.env

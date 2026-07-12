@@ -632,3 +632,8 @@
 2026-07-12 10:46:00 | INFO     | Modele charge depuis models/model.pkl
 2026-07-12 10:46:04 | WARNING  | Acces refuse : cle API invalide ou absente (None)
 2026-07-12 10:46:17 | WARNING  | Acces refuse : cle API invalide ou absente (None)
+2026-07-12 12:39:36 | INFO     | Arret de l'API.
+2026-07-12 12:40:51 | INFO     | Modele charge depuis models/model.pkl
+2026-07-12 12:42:26 | WARNING  | Acces refuse : cle API invalide ou absente (None)
+2026-07-12 12:43:35 | INFO     | POST /predict OK | client=172.20.0.1 | prediction=Good Credit | confiance=Moyenne | temps=269.8ms
+2026-07-12 14:00:46 | INFO     | Arret de l'API.
